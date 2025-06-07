@@ -1,1 +1,138 @@
-o
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bobo-Dioulasso | Tourisme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo Bobo-Dioulasso" class="logo">
+        <h1>Bobo-Dioulasso</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="patrimoine.html">Patrimoine</a></li>
+                <li><a href="reservation.html">Réservation d'hôtel</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Découvrez la Venise du Burkina Faso</h2>
+            <p>Bobo-Dioulasso, capitale culturelle du Burkina Faso, allie tradition et modernité avec ses marchés animés, son architecture coloniale et ses sites historiques emblématiques.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 tourrisme Bobo Dioulasso.<main>
+    <h2>Réservez votre hôtel</h2>
+    <form class="form-reservation">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" required>
+
+        <label for="date-arrivee">Date d'arrivée :</label>
+        <input type="date" id="date-arrivee" required>
+
+        <label for="nuits">Nombre de nuits :</label>
+        <input type="number" id="nuits" min="1" required>
+
+        <label for="hotel">Hôtel :</label>
+        <select id="hotel">
+            <option value="hotel1">Hôtel L'Auberge</option>
+            <option value="hotel2">Hôtel Savannah</option>
+        </select>
+
+        <button type="submit">Valider</button>
+    </form>
+</main><main>
+    <h2>Galerie Photo</h2>
+    <div class="grid-galerie">
+        <img src="assets/galerie1.jpg" alt="Marché de Bobo">
+        <img src="assets/galerie2.jpg" alt="Musée">
+        <!-- 10-15 images -->
+    </div>
+</main>/* Style global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../assets/bg.jpg');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Grid pour les pages Patrimoine/Galerie */
+.grid-patrimoine, .grid-galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-patrimoine {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+/* Formulaire */
+.form-reservation {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}<main>
+    <article class="site-detail">
+        <h2>Grande Mosquée de Bobo-Dioulasso</h2>
+        <img src="../assets/mosquee-detail.jpg" alt="Mosquée">
+        <div class="description">
+            <p>Construite en 1880, cette mosquée en banco est un chef-d'œuvre de l'architecture soudano-sahélienne...</p>
+            <h3>Historique</h3>
+            <p>Elle a été rénovée en 2017 grâce à l'UNESCO...</p>
+        </div>
+    </article>
+</main>Tourisme Bobo-Dioulasso</p>
+    </footer>
+</body>
+</html><!-- Même en-tête/footer que l'accueil -->
+<main>
+    <h2>Sites Patrimoniaux</h2>
+    <div class="grid-patrimoine">
+        <!-- Exemple pour 1 site -->
+        <a href="sites/mosquee.html" class="card-patrimoine">
+            <img src="assets/mosquee.jpg" alt="Grande Mosquée">
+            <h3>Grande Mosquée</h3>
+        </a>
+        <!-- Répéter pour 9 autres sites -->
+    </div>
+</main>
